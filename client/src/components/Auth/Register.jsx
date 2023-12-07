@@ -13,6 +13,7 @@ import {
 import { useState } from 'react';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
+import dynamicTitle from '../../config/dynamicTitle';
 
 const Register = () => {
 	const [showPassword, setShowPassword] = useState(false);
@@ -25,6 +26,8 @@ const Register = () => {
 	const handleMouseDownPassword = (event) => {
 		event.preventDefault();
 	};
+
+	dynamicTitle('Register');
 	return (
 		<Box
 			height="100vh"
