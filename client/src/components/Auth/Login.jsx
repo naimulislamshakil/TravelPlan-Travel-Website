@@ -26,63 +26,65 @@ const Login = () => {
 
 	dynamicTitle('Login');
 	return (
-		<Box
-			height="100vh"
-			display="flex"
-			justifyContent="center"
-			alignItems="center"
-		>
-			<Box width="30%">
-				<Typography variant="h5" fontWeight="bold">
-					Login your account
-				</Typography>
+		<>
+			<Box
+				height="100vh"
+				display="flex"
+				justifyContent="center"
+				alignItems="center"
+			>
+				<Box width="30%">
+					<Typography variant="h5" fontWeight="bold">
+						Login your account
+					</Typography>
 
-				<Box mt={2}>
-					<TextField
-						fullWidth
-						id="outlined-basic"
-						label="Email"
-						variant="outlined"
-					/>
-
-					<FormControl
-						sx={{ m: '1' }}
-						variant="outlined"
-						fullWidth
-						style={{ marginTop: '10px' }}
-					>
-						<InputLabel htmlFor="outlined-adornment-password">
-							Password
-						</InputLabel>
-						<OutlinedInput
-							style={{ width: '100%' }}
-							id="outlined-adornment-password"
-							type={showPassword ? 'text' : 'password'}
-							endAdornment={
-								<InputAdornment position="end">
-									<IconButton
-										aria-label="toggle password visibility"
-										onClick={handleClickShowPassword}
-										onMouseDown={handleMouseDownPassword}
-										edge="end"
-									>
-										{showPassword ? <VisibilityOff /> : <Visibility />}
-									</IconButton>
-								</InputAdornment>
-							}
-							label="Password"
+					<Box mt={2}>
+						<TextField
+							fullWidth
+							id="outlined-basic"
+							label="Email"
+							variant="outlined"
 						/>
-					</FormControl>
 
-					<Button
-						style={{ marginTop: '10px', width: '100%' }}
-						variant="contained"
-					>
-						LogIn
-					</Button>
+						<FormControl
+							sx={{ m: '1' }}
+							variant="outlined"
+							fullWidth
+							style={{ marginTop: '10px' }}
+						>
+							<InputLabel htmlFor="outlined-adornment-password">
+								Password
+							</InputLabel>
+							<OutlinedInput
+								style={{ width: '100%' }}
+								id="outlined-adornment-password"
+								type={showPassword ? 'text' : 'password'}
+								endAdornment={
+									<InputAdornment position="end">
+										<IconButton
+											aria-label="toggle password visibility"
+											onClick={handleClickShowPassword}
+											onMouseDown={handleMouseDownPassword}
+											edge="end"
+										>
+											{showPassword ? <VisibilityOff /> : <Visibility />}
+										</IconButton>
+									</InputAdornment>
+								}
+								label="Password"
+							/>
+						</FormControl>
+
+						<Button
+							style={{ marginTop: '10px', width: '100%' }}
+							variant="contained"
+						>
+							LogIn
+						</Button>
+					</Box>
 				</Box>
 			</Box>
-		</Box>
+		</>
 	);
 };
 
