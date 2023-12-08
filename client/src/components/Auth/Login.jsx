@@ -25,6 +25,7 @@ const Login = () => {
 	};
 
 	dynamicTitle('Login');
+	
 	return (
 		<>
 			<Box
