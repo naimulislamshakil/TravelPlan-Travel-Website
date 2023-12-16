@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+	--green: #1ec6b6;
+	--light-grey: #f7f7f7;
+	--dark: #0e1010;
+	--trans: all 0.3s ease-in-out;
+}
+
+html,
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.banner {
+	background-image: url('./image/image/images/header-bg.jpg');
+	height: 100vh;
+}
+
+.header-form {
+	color: #fff;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 3rem;
+	width: 80%;
+	border-radius: 0.2rem;
+}
+
+.header-form h3 {
+	font-size: 1.2rem;
+	padding-bottom: 10px;
+}
+
+.button {
+	padding: 0.7rem 2.4rem;
+	border-radius: 0.2rem;
+	font-weight: 600;
+	background-color: var(--green);
+	color: #fff;
+	border: 1px solid var(--green);
+}

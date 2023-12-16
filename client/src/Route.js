@@ -1,7 +1,6 @@
 import { lazy } from 'react';
+import Navbar from './Components/Navbar/index.jsx';
 
-const HomePage = lazy(() => import('./pages/HomePage/index.jsx'));
-const LoginPage = lazy(() => import('./pages/Auth/LoginPage.jsx'));
-const RegisterPage = lazy(() => import('./pages/Auth/RegisterPage.jsx'));
+const HomePage = lazy(() => import('./pages/Home/index.jsx'));
 
-export { HomePage, LoginPage, RegisterPage };
+export { Navbar, HomePage };

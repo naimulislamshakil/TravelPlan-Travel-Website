@@ -1,5 +1,5 @@
 const dynamicTitle = (page) => {
-	document.title = `${page} | TravelPlan`;
+	document.title = `${page} | ExploreHub`;
 };
 
 export default dynamicTitle;

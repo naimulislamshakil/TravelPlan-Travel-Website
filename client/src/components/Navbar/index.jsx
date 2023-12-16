@@ -12,7 +12,6 @@ import {
 } from '@mui/material';
 import HelpOutlinedIcon from '@mui/icons-material/HelpOutlined';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
-import '../Home/home.css';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -43,7 +42,14 @@ const index = () => {
 		setAnchorNav(null);
 	};
 	return (
-		<AppBar position="static">
+		<AppBar
+			position="static"
+			style={{
+				backgroundColor: '#014A51',
+			}}
+			className="navbar"
+			elevation={0}
+		>
 			<Toolbar>
 				<Typography
 					variant="h5"
@@ -90,7 +96,7 @@ const index = () => {
 				<Box sx={{ display: { xs: 'flex', md: 'none' }, alignItems: 'center' }}>
 					<IconButton
 						size="large"
-						edge="start"
+						edge="end"
 						onClick={openMenu}
 						color="inherit"
 						aria-controls="mobileMenu"
@@ -156,6 +162,7 @@ const index = () => {
 
 					<Typography
 						variant="h5"
+						e
 						sx={{ display: { xs: 'flex', md: 'none' }, ml: '20px' }}
 					>
 						ExploreHub
