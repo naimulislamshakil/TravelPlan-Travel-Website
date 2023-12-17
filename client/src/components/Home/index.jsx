@@ -6,6 +6,7 @@ import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css';
 import Datepicker from 'react-tailwindcss-datepicker';
 import FeturePlace from './FeturePlace';
+import Service from './Service';
 
 const index = () => {
 	dynamicTitle('Home');
@@ -80,6 +81,9 @@ const index = () => {
 
 			{/* Feture place Section */}
 			<FeturePlace />
+
+			{/* Service Section */}
+			<Service />
 		</div>
 	);
 };

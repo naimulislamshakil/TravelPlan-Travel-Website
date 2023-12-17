@@ -64,7 +64,7 @@ const FeturePlace = () => {
 			<span className="block text-[#787878] font-[300] text-[1.2rem] pb-[1rem] max-w-[450px] mx-auto leading-[1.7] uppercase tracking-[2px]">
 				know about some places before your travel
 			</span>
-			<h2 className="text-[1.8rem] uppercase tracking-[2px]">
+			<h2 className="text-[1.8rem] uppercase tracking-[2px] font-bold">
 				featured places
 			</h2>
 
@@ -72,6 +72,7 @@ const FeturePlace = () => {
 				<div className="grid md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 gap-2 ">
 					{cards.map((card) => (
 						<FeturePlaceCard
+							key={card.id}
 							img={card.img}
 							icon={card.icon}
 							description={card.description}
