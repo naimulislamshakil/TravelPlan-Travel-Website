@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import VideoS from '../../image/video/videos/video-section.mp4';
 
 const Video = () => {
