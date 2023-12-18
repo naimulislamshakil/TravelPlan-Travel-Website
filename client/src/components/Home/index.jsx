@@ -8,6 +8,7 @@ import Datepicker from 'react-tailwindcss-datepicker';
 import FeturePlace from './FeturePlace';
 import Service from './Service';
 import Testmonial from './Testmonial';
+import Video from './Video';
 
 const index = () => {
 	dynamicTitle('Home');
@@ -88,6 +89,9 @@ const index = () => {
 
 			{/* Testimonial section */}
 			<Testmonial />
+
+			{/* Video Section */}
+			<Video />
 		</div>
 	);
 };

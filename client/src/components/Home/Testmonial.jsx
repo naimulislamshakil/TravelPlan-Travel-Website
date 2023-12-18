@@ -40,7 +40,7 @@ const Testmonial = () => {
 				testimonials
 			</h2>
 
-			<div className="grid grid-cols-3 gap-2 mt-5">
+			<div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-2 mt-5">
 				{testimonials.map((test) => (
 					<TestimonialCard
 						key={test.id}
