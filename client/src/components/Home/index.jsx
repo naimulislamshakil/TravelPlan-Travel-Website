@@ -7,6 +7,7 @@ import 'react-date-range/dist/theme/default.css';
 import Datepicker from 'react-tailwindcss-datepicker';
 import FeturePlace from './FeturePlace';
 import Service from './Service';
+import Testmonial from './Testmonial';
 
 const index = () => {
 	dynamicTitle('Home');
@@ -84,6 +85,9 @@ const index = () => {
 
 			{/* Service Section */}
 			<Service />
+
+			{/* Testimonial section */}
+			<Testmonial />
 		</div>
 	);
 };
