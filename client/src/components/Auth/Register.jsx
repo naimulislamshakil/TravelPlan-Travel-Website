@@ -1,14 +1,32 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Login = () => {
+const Register = () => {
 	return (
-		<div className="container mx-auto my-16 flex justify-center items-center">
+		<div className="container mx-auto flex justify-center items-center py-16">
 			<div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 justify-center items-center">
 				<form class="space-y-6" action="#">
 					<h5 class="text-xl font-medium text-gray-900">
-						Login to our platform
+						Create account to our platform
 					</h5>
+
+					<div>
+						<label
+							for="name"
+							class="block mb-2 text-sm font-medium text-gray-900"
+						>
+							Your Name
+						</label>
+						<input
+							type="text"
+							name="name"
+							id="name"
+							class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+							placeholder="Naimul Islam"
+							required
+						/>
+					</div>
+
 					<div>
 						<label
 							for="email"
@@ -67,12 +85,12 @@ const Login = () => {
 						type="submit"
 						class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
 					>
-						Login to your account
+						Already have an account
 					</button>
 					<div class="text-sm font-medium text-gray-500">
 						Not registered?{' '}
-						<Link to="/register" class="text-blue-700 hover:underline">
-							Create account
+						<Link to="/login" class="text-blue-700 hover:underline">
+							Login account
 						</Link>
 					</div>
 				</form>
@@ -81,4 +99,4 @@ const Login = () => {
 	);
 };
 
-export default Login;
+export default Register;

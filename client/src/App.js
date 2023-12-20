@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router';
-import { Navbar, HomePage, LoginPage } from './Route';
+import { Navbar, HomePage, LoginPage, RegisterPage } from './Route';
 import Footer from './Components/Home/Footer';
 import ScrollToTop from 'react-scroll-to-top';
 
@@ -10,6 +10,7 @@ function App() {
 			<Routes>
 				<Route path="/" element={<HomePage />} />
 				<Route path="/login" element={<LoginPage />} />
+				<Route path="/register" element={<RegisterPage />} />
 			</Routes>
 			<Footer />
 			<ScrollToTop
