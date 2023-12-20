@@ -23,7 +23,7 @@ const Footer = () => {
 
 					{/* colom 2 */}
 					<div className="footer-item">
-						<h2>Follow us on: </h2>
+						<h2 className="text-2xl font-bold">Follow us on: </h2>
 						<ul className="social-links">
 							<li>
 								<a href="#">
@@ -54,7 +54,7 @@ const Footer = () => {
 					</div>
 
 					<div className="footer-item">
-						<h2>Popular Places:</h2>
+						<h2 className="text-2xl font-bold">Popular Places:</h2>
 						<ul>
 							<li>
 								<a href="#">Thailand</a>
@@ -75,14 +75,14 @@ const Footer = () => {
 					</div>
 
 					<div className="subscribe-form footer-item">
-						<h2>Subscribe for Newsletter!</h2>
+						<h2 className="text-2xl">Subscribe for Newsletter!</h2>
 						<form className="flex justify-center items-center">
 							<input
 								type="email"
 								placeholder="Enter Email"
-								className="form-control"
+								className="form-control p-2 rounded bg-[#0e1010] border border-white "
 							/>
-							<input type="submit" className="btn" value="Subscribe" />
+							<input type="submit" className="button mt-2" value="Subscribe" />
 						</form>
 					</div>
 				</footer>

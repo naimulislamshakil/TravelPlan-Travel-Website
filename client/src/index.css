@@ -95,7 +95,7 @@ body {
 
 footer {
 	background-color: var(--dark);
-	color: #fff;
+	color: #fff !important;
 	text-align: center;
 	position: relative;
 }
@@ -118,7 +118,7 @@ footer .site-brand {
 	margin: 3rem 0;
 }
 .footer-item a {
-	font-size: 1.2rem;
+	font-size: 1.2rem !important;
 	color: #fff;
 	-webkit-transition: var(--trans);
 	-o-transition: var(--trans);
@@ -149,43 +149,43 @@ footer .site-brand {
 }
 .footer-item:nth-child(3) a {
 	display: inline-block;
-	font-size: 1rem;
+	font-size: 1rem !important;
 	opacity: 0.7;
 }
 .subscribe-form form {
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
+	-webkit-box-orient: vertical !important;
+	-webkit-box-direction: normal !important;
+	-ms-flex-direction: column !important;
+	flex-direction: column !important;
 }
 .subscribe-form form input {
-	width: 100%;
-	max-width: 300px;
+	width: 100% !important;
+	max-width: 300px !important;
 }
 .subscribe-form .form-control {
-	border-color: rgba(255, 255, 255, 0.3);
-	-webkit-transition: var(--trans);
-	-o-transition: var(--trans);
-	transition: var(--trans);
+	border-color: rgba(255, 255, 255, 0.3) !important;
+	-webkit-transition: var(--trans) !important;
+	-o-transition: var(--trans) !important;
+	transition: var(--trans) !important;
 }
 .subscribe-form .form-control:focus {
-	border-color: #fff;
+	border-color: #fff !important;
 }
 .subscribe-form form input[type='email']::-webkit-input-placeholder {
-	color: #fff;
-	opacity: 0.3;
+	color: #fff !important;
+	opacity: 0.3 !important;
 }
 .subscribe-form form input[type='email']::-moz-placeholder {
-	color: #fff;
-	opacity: 0.3;
+	color: #fff !important;
+	opacity: 0.3 !important;
 }
 .subscribe-form form input[type='email']:-ms-input-placeholder {
-	color: #fff;
-	opacity: 0.3;
+	color: #fff !important;
+	opacity: 0.3 !important;
 }
 .subscribe-form form input[type='email']::-ms-input-placeholder {
-	color: #fff;
-	opacity: 0.3;
+	color: #fff !important;
+	opacity: 0.3 !important;
 }
 .subscribe-form form input[type='email']::placeholder {
 	color: #fff;
