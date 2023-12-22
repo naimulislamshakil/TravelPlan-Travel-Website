@@ -3,6 +3,7 @@ import { Navbar } from '../../Route';
 import AOS from 'aos';
 import Gallary from './Gallary';
 import dynamicTitle from '../../config/DynamicTitle';
+import PopularPlace from './PopularPlace';
 // ..
 AOS.init();
 
@@ -45,8 +46,11 @@ const index = () => {
 				</div>
 			</div>
 
-			{/* Gallery */}
+			{/* Gallery Section */}
 			<Gallary />
+
+			{/* Popular Place Secton  */}
+			<PopularPlace />
 		</div>
 	);
 };
