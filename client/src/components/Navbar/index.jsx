@@ -24,6 +24,10 @@ const index = () => {
 			title: 'Gallery',
 			route: '/gallery',
 		},
+		{
+			title: 'Hotel',
+			route: '/find-hotel',
+		},
 	];
 	return (
 		<nav
